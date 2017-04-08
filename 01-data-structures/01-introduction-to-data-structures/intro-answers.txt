@@ -1,0 +1,14 @@
+1. For Line class, if line array is initialized and already filled with string of people,
+it will be accessed with its functions inside of Line class such as join, leave,
+front, middle, back, search.
+For Screen class, it will be filled up with data when it first initializes in
+initialize parameters, and data in screen class will be accessed or modified using
+insert(pixel, x, y) and at(x, y) method
+
+2. For line class, element inside of this Data Structure can be found with front,
+middle, back and search method since those closely deal with accessing datas.
+For Screen class, at(x, y) function will search for the pixel at particular coordinates
+that were accessed from its parameters.
+
+3. I believe Line class looks very similar to Queue Data Structure, which pops item
+that were inserted last, and Screen class can be used in games that has x, y coordinates.
