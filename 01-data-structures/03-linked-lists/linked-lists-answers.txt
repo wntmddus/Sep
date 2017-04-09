@@ -1,0 +1,21 @@
+1. If data is accessed, it is possible that data near them would possibly accessed
+in a near future. So data near the access point will be cached in the memory
+and will improve the performance of the system when data cached is accessed later on.
+
+2. Performance of creating 10000 array seems to be much faster than creating 10000
+linked list about 5 times
+
+3. Performance of accessing 5000th element in array is about 110 times faster than
+accessing 5000th element in linked list.
+
+4. Performance of deleting 5000th element in array is about 50 times faster than
+deleting 5000th element in linked list.
+
+Seungs-MacBook:03-linked-lists seungyeonjoo$ ruby benchmark.rb
+                          user     system      total        real
+array:                   0.000000   0.000000   0.000000 (  0.001320)
+linked_list:             0.010000   0.000000   0.010000 (  0.005412)
+array_search_5000:       0.000000   0.000000   0.000000 (  0.000003)
+linked_list_search_5000: 0.000000   0.000000   0.000000 (  0.000481)
+array_remove_5000:       0.000000   0.000000   0.000000 (  0.000007)
+linked_list_remove_5000: 0.000000   0.000000   0.000000 (  0.000376)

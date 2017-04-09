@@ -54,6 +54,13 @@ class LinkedList
       temp.next = temp.next.next
     end
   end
+  def search_index(index)
+    temp = self.head
+    for i in 0..index
+      temp = temp.next
+    end
+    temp
+  end
 
   # This method adds `node` to the front of the list and must set the list's head to `node`.
   def add_to_front(node)
