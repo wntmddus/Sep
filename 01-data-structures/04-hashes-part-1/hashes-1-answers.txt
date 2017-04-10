@@ -1,0 +1,4 @@
+1. This version of HashClass will continue to double its size of array when
+index of item that it wishes to enter keep duplicates. This will eventually going
+to happen more often and more memory space will be allocated that are full of nils
+This HashClass system works; however it is very inefficient and wastes a lot of memory spaces.
