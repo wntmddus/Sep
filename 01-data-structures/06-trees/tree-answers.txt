@@ -1,0 +1,14 @@
+1. Binary Search Tree does not process inserts with 100000 elements in it.
+it halts in the middle of operation.
+However, since min binary heap has running time of O(1) for inserts it processes 100000 elements
+That shows that min binary heap is far more efficient than Binary Search Tree
+
+2. Since Binary Search Tree cannot process inserting 100000 elements, I only got the benchmarks
+for min binary heap only
+user     system      total        real
+MinBinaryHeap insert 100000:   0.710000   0.010000   0.720000 (  0.726398)
+MinBinaryHeap find 50000  0.000000   0.000000   0.000000 (  0.004945)
+MinBinaryHeap delete 50000   0.030000   0.000000   0.030000 (  0.022134)
+I would use binary heap for most the cases since it is far more efficient than binary search tree
+
+I would use Binary search tree when there is elements less than 1000 in the database.
