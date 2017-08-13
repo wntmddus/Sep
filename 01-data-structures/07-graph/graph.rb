@@ -1,4 +1,23 @@
 require_relative 'node'
+
+def find_kevin_bacon(actor)
+  films = []
+
+  actor.film_actor_hash.each do |title, actors|
+    actors.each do |actor|
+      if actor != 'kevin_bacon'
+        films << title
+        find_kevin_bacon(actor)
+      else
+        if films.length <= 6
+          puts "Degree of Kevin Bacon: #{films.length}"
+        else
+          puts "More than six deggrees of Kevin Bacon"
+        end
+      end
+    end
+  end
+end
 kevin_bacon = Node.new("Kevin Bacon")
 one = Node.new("One")
 two = Node.new("two")
@@ -45,3 +64,5 @@ eight.film_actor_hash["ever"] = [three, six]
 eight.film_actor_hash["give"] = [six, five]
 eight.film_actor_hash["happy"] = [six, seven]
 eight.film_actor_hash["slave"] = [five, seven]
+
+find_kevin_bacon(eight)
